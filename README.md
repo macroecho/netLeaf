@@ -3,7 +3,9 @@
 使用方式：
 ```
 var idGenerator = IdGeneratorFactory.GetDefault("Server=127.0.0.1;Port=3306;Uid=root;Pwd=keikei;DataBase=netleaf;CharSet=utf8;allow zero datetime=true;Max Pool Size=10000;");
-var idGenerator.Init();
+// 初始化。
+idGenerator.Init();
+// 生成 Id。
 var id = idGenerator.Generation();
 ```
 
